@@ -1,0 +1,10 @@
+server:
+  port: 9090
+
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://104.42.29.134:3306/athletic?serverTimezone=GMT-8
+    username: blueteam2024
+    password: Blueteam2024#
