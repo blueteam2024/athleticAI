@@ -8,3 +8,24 @@ spring:
     url: jdbc:mysql://104.42.29.134:3306/athletic?serverTimezone=GMT-8
     username: blueteam2024
     password: Blueteam2024#
+    hikari:
+      minimum-idle: 3
+      maximum-pool-size: 10
+      max-lifetime: 30000
+      connection-test-query: SELECT 1
+
+  jpa:
+    h2:
+      console:
+        enabled: true
+        path: /h2-console
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        format_sql: true
