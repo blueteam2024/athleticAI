@@ -1,2 +1,2 @@
-# athleticAi
+# athleticAI
  
